@@ -11,6 +11,9 @@ import social4 from '../assets/social4.png'
 import web3 from '../assets/web3.png'
 import logo from '../assets/ico2.png'
 import Login from './Login'
+import a1 from "/src/assets/sec22.png"
+import a2 from "/src/assets/sec21.png"
+import a3 from "/src/assets/sec24.png"
 import { Link } from 'react-router-dom'
 const Education = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -49,11 +52,11 @@ const Education = () => {
 
 
 
-            <div className="section2">
+            <div className="section2 mb-5">
                 <p className='sechead'>SIR Global Academy Education</p>
                 <div className="sec2cards">
                     <div className="sec2card">
-                        <img src="/src/assets/sec22.png" style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
+                        <img src={a1} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Stock Education</p>
                         <p>Crypto investment entails purchasing and holding digital assets like Bitcoin or Ethereum with the
                             expectation of capital appreciation. </p>
@@ -62,13 +65,13 @@ const Education = () => {
 
 
                     <div className="sec2card">
-                        <img src="/src/assets/sec21.png" style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
+                        <img src={a2} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Forex Education</p>
                         <p>Forex (foreign exchange) investment involves trading global currencies in the decentralized foreign
                             exchange market, with the aim of profiting from fluctuations in exchange rates. </p>
                     </div>
                     <div className="sec2card">
-                        <img src="/src/assets/sec24.png" style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
+                        <img src={a3} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Crypto Education</p>
                         <p>
                             Cryptoinvestment entails purchasing and holding digital assets like Bitcoin or Ethereum with the
