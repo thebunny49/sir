@@ -11,6 +11,7 @@ import social4 from '../assets/social4.png'
 import web3 from '../assets/web3.png'
 import logo from '../assets/ico2.png'
 import Login from './Login'
+import cmain from '../assets/cryptotrade.png'
 import a1 from "/src/assets/sec22.png"
 import a2 from "/src/assets/sec21.png"
 import a3 from "/src/assets/sec24.png"
@@ -26,14 +27,14 @@ const Education = () => {
           
   <div className="edumain">
   <div className="navbar">
-    <Link class="logo" href="#"><img src={logo} style={{width: 45, height: 45,}} alt="" /></Link>
+    <Link class="logo" href="#"><img src={logo} style={{width: 60, height: 60,}} alt="" /></Link>
       <button className="toggle-button" onClick={toggleNav}>
         ☰
       </button>
       <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
       <div className='alink'>
       <Link to='/login'><button class="btn btn-warning">Login</button></Link>
-                <a href="#"><button class="btn btn-warning">SignUp</button></a>
+                <Link to="/register"><button class="btn btn-warning">SignUp</button></Link>
       </div>
       </div>
     </div>
@@ -43,10 +44,10 @@ const Education = () => {
                     <p className='s1para'>SIR Global Academy excels in teaching trading and investment
                         with a practical, expert-led approach. Their curriculum, blending theory with real-world strategies,
                         stands out in preparing individuals for success in financial markets.</p>
-                    <button class="btn btn-warning"> Get Started</button>
+                    <Link to='/register' class="btn btn-warning"> Get Started</Link>
                 </div>
                 <div className="sec1right">
-                    <img src="/src/assets/cryptotrade.png" className='mainimg' alt="" />
+                    <img src={cmain} className='mainimg' alt="" />
                 </div>
             </div>
 
