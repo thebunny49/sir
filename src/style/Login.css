@@ -57,8 +57,9 @@
   
   .group label {
     display: block;
-    color: rgba(156, 163, 175, 1);
+    color: rgb(252, 252, 252);
     margin-bottom: 4px;
+    font-weight: 600;
   }
   
 
