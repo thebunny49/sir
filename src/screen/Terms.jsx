@@ -6,10 +6,20 @@ import ceo from '../assets/ceo.png'
 import social2 from '../assets/social2.png'
 import social3 from '../assets/social3.png'
 import social4 from '../assets/social4.png'
+import { useNavigate } from 'react-router-dom';
 const tac = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   
+  const history = useNavigate();
 
+  const handleClick = () => {
+    history.push('/privacy-policy'); // Replace '/your-link' with the actual link you want to navigate to
+    window.scrollTo(0, 0); // Scroll to the top
+  };
+  const handleClick2 = () => {
+    history.push('/terms-and-condition'); // Replace '/your-link' with the actual link you want to navigate to
+    window.scrollTo(0, 0); // Scroll to the top
+  };
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
@@ -17,7 +27,7 @@ const tac = () => {
     <>
   <div className="edumain">
   <div className="navbar">
-    <Link className="logo" href="#"><img src={logo} style={{width: 60, height: 60,}} alt="" /></Link>
+    <Link className="logo" to='/'><img src={logo} style={{width: 60, height: 60,}} alt="" /></Link>
       <button className="toggle-button" onClick={toggleNav}>
         ☰
       </button>
@@ -442,8 +452,8 @@ const tac = () => {
 									<div className="r1 col-md-3 mb-md-0 mb-4 border-left">
 										<h2 className="footer-heading">Privacy</h2>
 										<ul className="list-unstyled">
-											<li><Link style={{ textDecoration: 'none' }} to="/terms-and-condition" className="py-1 d-block">Terms and condition</Link></li>
-											<li><Link to='/privacy-policy' style={{ textDecoration: 'none' }} className="py-1 d-block">Privacy Policy</Link></li>
+											<li><Link style={{ textDecoration: 'none' }} onClick={handleClick2} to="/terms-and-condition" className="py-1 d-block">Terms and condition</Link></li>
+											<li><Link to='/privacy-policy' style={{ textDecoration: 'none' }} onClick={handleClick} className="py-1 d-block">Privacy Policy</Link></li>
 
 										</ul>
 									</div>
