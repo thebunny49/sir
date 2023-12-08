@@ -38,7 +38,7 @@ const Education = () => {
       </div>
       </div>
     </div>
-            <div className="section1 container">
+            <div className="section1 container mb-5">
                 <div className="sec1left">
                     <p className='s1head'>SIR GLOBAL ACADEMY</p>
                     <p className='s1para'>SIR Global Academy excels in teaching trading and investment
@@ -59,8 +59,9 @@ const Education = () => {
                     <div className="sec2card">
                         <img src={a1} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Stock Education</p>
-                        <p>Crypto investment entails purchasing and holding digital assets like Bitcoin or Ethereum with the
-                            expectation of capital appreciation. </p>
+                        <p>Stocks are a type of security that gives stockholders a share of ownership in a company.
+
+Companies sell shares typically to gain additional money to grow the company.  </p>
 
                     </div>
 
@@ -86,7 +87,7 @@ const Education = () => {
                 <p className='sechead'>Stock Education</p>
 
                 <div class="sec3detail">
-                    <div class="s3left">
+                    <div class="s3left" style={{padding: 2, textAlign:"justify"}}>
                         <p>When people talk about investing in stocks, they're usually referring to common stock. These kinds of
                             stocks give you the opportunity to join in the success of public companies, and as such, they're an
                             investment that can really grow your portfolio.
@@ -107,7 +108,7 @@ const Education = () => {
                         </p>
                     </div>
                     <div class="s3right">
-                        <img src={s3img} style={{ width: "100%", height: "100%" }} alt="" />
+                        <img src={s3img} style={{ width: "60%", height: "60%" }} alt="" />
                     </div>
                 </div>
 
@@ -165,7 +166,7 @@ const Education = () => {
 <div className="section4" id="forex">
 <p className='sechead'>Forex Education</p>
 <div class="sec3detail2">
-            <div class="s3left">
+            <div class="s3left" style={{padding: 2, textAlign:"justify"}}>
                 In the ever-evolving landscape of financial markets, forex (foreign exchange) trading stands out as a
                 dynamic and liquid arena for investors. As the largest and most decentralized market globally, forex
                 offers unparalleled opportunities for those looking to capitalize on currency fluctuations. <br /> This
@@ -181,7 +182,7 @@ const Education = () => {
 
             </div>
             <div class="s3right">
-                <img src={forex} style={{ width: "100%", height: "100%" }} salt="" />
+                <img src={forex} style={{ width: "80%", height: "80%" }} salt="" />
             </div>
         </div>
 
@@ -228,7 +229,7 @@ const Education = () => {
 <div className="section5" id="crypto">
 <p className='sechead'>Crypto Education</p>
 <div class="sec3detail">
-            <div class="s3left">
+            <div class="s3left" style={{padding: 2, textAlign:"justify"}}>
 
                 A cryptocurrency is a digital or virtual currency secured by cryptography, which makes it nearly
                 impossible to counterfeit or double-spend. Most cryptocurrencies exist on decentralized networks using
@@ -270,7 +271,7 @@ const Education = () => {
         <img src={web3} style={{width:"100%", height:"100%", borderRadius:15}} alt="" />
 
         </div>
-        <div className="s6right">
+        <div className="s6right" style={{padding: 2, textAlign:"justify"}}>
 <p> Web 3.0 is the next evolutionary step for the Internet. It is a decentralized online backdrop built on the blockchain at its most basic level. It will allow users to own platforms and apps developed on Web3 rather than a central authority. Users earn their privilege by building and maintaining the services.
 <br /><br />
 Data Privacy is the key issue with the current state of the Internet. Social media networks have been collecting and exploiting user data for advertising revenue. We are already aware of the net worth of social media companies which is proof of how much they have earned through selling personal information. Web 3.0 will change the Internet for the better by introducing decentralization.

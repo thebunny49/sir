@@ -6,40 +6,50 @@ const Signup = () => {
   return (
    <>
     <div className="signupmain">
-    <div className="loginleft">
-<img src={icon} style={{width:100, height:100}} alt="" />
-<p className='loghead'>Welcome TO SIR Global Academy</p>
-<p className='logpara'>Register on SIR platform easily. <br /> World’s topmost platform to generate revenue</p>
-    </div>
+    
     <div className="form-container2">
+	<div className="loginleft">
+<img src={icon} style={{width:100, height:100}} alt="" />
+<p className='loghead' style={{textTransform:"uppercase"}}>SIR Global Academy</p>
+    </div>
 	<p className="title">SignUp</p>
 	<form className="form">
-		<div className="input-group">
-			<label for="username">Email Address</label>
-			<input type="text" name="email" id="email" placeholder="" />
-		</div>
-        <div className="input-group">
-			<label for="username">Full Name</label>
-			<input type="text" name="name" id="name" placeholder="" />
-		</div>
-        <div className="input-group">
-			<label for="username">Phone Number</label>
-			<input type="number" name="mobile" id="mobile" placeholder="" />
-		</div>
-		<div className="input-group">
-			<label for="password">Password</label>
-			<input type="password" name="password" id="password" placeholder="" />
-			
-		</div>
-        <div className="input-group">
-			<label for="password"> Confirm Password</label>
-			<input type="password" name="password" id="password" placeholder="" />
-			
-		</div>
-        <div className="input-group">
-			<label for="username">Referral Link</label>
-			<input type="text" name="name" id="name" placeholder="" />
-		</div>
+	
+       
+    
+		
+      
+    
+
+
+		<div class="group">
+						<label for="email">Email Address</label>
+  <input required=""  autofocus=""  type="email" class="input" />
+</div>
+<div class="group">
+						<label for="name">Full Name</label>
+  <input required=""  autofocus=""  type="text" class="input" />
+</div>
+<div class="group">
+						<label for="phone">Phone Number</label>
+  <input required=""  autofocus=""  type="tel" maxLength={10} class="input" />
+</div>
+<div class="group">
+						<label for="password">Password</label>
+  <input required=""  autofocus=""  type="password" class="input" />
+</div>
+<div class="group">
+						<label for="Password">Confirm Password</label>
+  <input required=""  autofocus=""  type="password" class="input" />
+</div>
+<div class="group">
+						<label for="referral">Referral Link</label>
+  <input required=""  autofocus=""  type="text" class="input" />
+</div>
+
+
+
+
         <div class="form-check" style={{margin:"15px 0px"}}>
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
   <label class="form-check-label" for="flexCheckDefault">
@@ -51,7 +61,7 @@ const Signup = () => {
 	
   
 	<p className="signup">Already have an account?
-		<Link  to="/login" rel="noopener noreferrer" href="#" className="">Login</Link>
+		<Link  to="/login" rel="noopener noreferrer" href="#" className=""> Login</Link>
 	</p>
 </div>
     </div>
