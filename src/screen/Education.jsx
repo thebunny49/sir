@@ -13,6 +13,9 @@ import logo from '../assets/ico2.png'
 import Login from './Login'
 import cmain from '../assets/cryptotrade.png'
 import a1 from "/src/assets/sec22.png"
+import why from "/src/assets/why.svg"
+import why2 from "/src/assets/why2.svg"
+import why3 from "/src/assets/why3.svg"
 import a2 from "/src/assets/sec21.png"
 import a3 from "/src/assets/sec24.png"
 import { Link } from 'react-router-dom'
@@ -51,12 +54,66 @@ const Education = () => {
                 </div>
             </div>
 
+<div className="extra">
+    <div className="why">
+        <div className="whyleft">
+<img src={why} style={{width:"100%", height:"100%"}} alt="" />
+        </div>
+        <div className="whyright">
+        <h1 className="whyhead">
+            Why Choose SIR Global Academy?
+        </h1>
+<p className="whydesc">
+<br />
+<b>Expertise and Comprehensive Curriculum</b>:<br /> SIR Global Academy offers a comprehensive curriculum developed by industry experts. This ensures that students receive in-depth knowledge covering various aspects of cryptocurrencies, blockchain technology, decentralized finance, and related subjects.
+<br /><br />
+<b>Innovative Teaching Methodologies</b>: <br />The academy might utilize innovative and effective teaching methods, such as practical projects, case studies, workshops, and real-world simulations, to enhance learning outcomes and provide a hands-on understanding of the subject matter.
+<br /><br />
+<b>Global Access and Inclusivity</b>: <br />SIR Global Academy may provide education accessible globally, making it possible for students from diverse geographical locations to enroll and benefit from their courses. It could foster a diverse and inclusive learning community.
+<br /><br />
+<b>Industry Connections and Networking</b>: <br />The academy might have strong ties with industry leaders, companies, and professionals in the crypto and blockchain space. This can provide students with networking opportunities, internships, and potential career paths within the industry.
+<br /><br />
+<b>Cutting-edge Insights and Updates</b>: <br />SIR Global Academy may offer up-to-date insights into the rapidly evolving world of cryptocurrencies and blockchain. This can ensure that students are informed about the latest trends, developments, and innovations in the field.
+<br />
+</p>
+        </div>
+    </div>
 
+    <div className="why2 container">
+    <div className="vision mt-3">
+    <img src={why2} style={{width:"60%", height:"60%"}} alt="" />
+    <h3 className="vhead mt-4">VISION</h3>
+    <p className="visionpara">
+    Sir Global Academy, our vision for Crypto Education is to empower individuals worldwide with comprehensive
+     knowledge and expertise in the dynamic realm of cryptocurrencies and blockchain technology. We aspire to 
+     cultivate a globally inclusive learning environment that fosters deep understanding, critical thinking, 
+     and practical skills essential for navigating the complexities of the digital economy. Our commitment lies
+      in delivering cutting-edge education, merging theoretical foundations with real-world applications, thereby 
+      enabling students to become proficient in blockchain technology, decentralized finance (DeFi), crypto markets, 
+      smart contracts, and the underlying principles driving this transformative industry. 
+    </p>
+</div>
+
+<div className="mission">
+<img src={why3} style={{width:"60%", height:"60%"}} alt="" />
+    <h3 className="vhead mt-4">MISSION</h3>
+    <p className="visionpara">
+    At Sir Global Academy, our mission is to provide accessible, top-tier education in cryptocurrencies 
+    and blockchain technology, catering to diverse learners globally. We strive to deliver comprehensive, 
+    up-to-date curriculum curated by industry experts, offering a blend of theoretical knowledge and practical skills. 
+    Our mission encompasses fostering an engaging learning environment that encourages critical thinking,
+     problem-solving, and hands-on experience in navigating the intricacies of the crypto landscape. 
+     We are committed to nurturing a community of learners equipped with the proficiency to comprehend blockchain technology, 
+     analyze crypto markets, leverage decentralized finance, and apply ethical practices. 
+    </p>
+</div>
+    </div>
+</div>
 
             <div className="section2 mb-5">
                 <p className='sechead'>SIR Global Academy Education</p>
                 <div className="sec2cards">
-                    <div className="sec2card">
+                    <div className="sec2card" data-aos="fade-up" data-aos-duration="2000">
                         <img src={a1} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Stock Education</p>
                         <p>Stocks are a type of security that gives stockholders a share of ownership in a company.
@@ -66,13 +123,13 @@ Companies sell shares typically to gain additional money to grow the company.  <
                     </div>
 
 
-                    <div className="sec2card">
+                    <div className="sec2card" data-aos="fade-up" data-aos-duration="2000">
                         <img src={a2} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Forex Education</p>
                         <p>Forex (foreign exchange) investment involves trading global currencies in the decentralized foreign
                             exchange market, with the aim of profiting from fluctuations in exchange rates. </p>
                     </div>
-                    <div className="sec2card">
+                    <div className="sec2card" data-aos="fade-up" data-aos-duration="2000">
                         <img src={a3} style={{ width: 100, height: 100, marginBottom: 15 }} alt="" />
                         <p style={{ fontSize: 20, fontWeight: 700, fontFamily: "Roboto" }}>Crypto Education</p>
                         <p>
