@@ -17,11 +17,20 @@ import why from "/src/assets/why.svg"
 import why2 from "/src/assets/why2.svg"
 import why3 from "/src/assets/why3.svg"
 import a2 from "/src/assets/sec21.png"
+import { useNavigate } from 'react-router-dom';
 import a3 from "/src/assets/sec24.png"
 import { Link } from 'react-router-dom'
 const Education = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
-
+    const history = useNavigate();
+    const handleClick = () => {
+        history.push('/privacy-policy'); // Replace '/your-link' with the actual link you want to navigate to
+        window.scrollTo(0, 0); // Scroll to the top
+      };
+      const handleClick2 = () => {
+        history.push('/terms-and-condition'); // Replace '/your-link' with the actual link you want to navigate to
+        window.scrollTo(0, 0); // Scroll to the top
+      };
     const toggleNav = () => {
       setIsNavOpen(!isNavOpen);
     };
@@ -441,8 +450,8 @@ The next significant element of Web3 is blockchain, the backbone of cryptocurren
 									<div className="r1 col-md-3 mb-md-0 mb-4 border-left">
 										<h2 className="footer-heading">Privacy</h2>
 										<ul className="list-unstyled">
-											<li><Link style={{ textDecoration: 'none' }} to="/terms-and-condition" className="py-1 d-block">Terms and condition</Link></li>
-											<li><Link to='/privacy-policy' style={{ textDecoration: 'none' }} className="py-1 d-block">Privacy Policy</Link></li>
+											<li><Link style={{ textDecoration: 'none' }} onClick={handleClick2} to="/terms-and-condition" className="py-1 d-block">Terms and condition</Link></li>
+											<li><Link to='/privacy-policy' onClick={handleClick} style={{ textDecoration: 'none' }} className="py-1 d-block">Privacy Policy</Link></li>
 
 										</ul>
 									</div>
