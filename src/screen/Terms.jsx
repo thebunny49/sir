@@ -13,11 +13,11 @@ const tac = () => {
   const history = useNavigate();
 
   const handleClick = () => {
-    history.push('/privacy-policy'); // Replace '/your-link' with the actual link you want to navigate to
+   // Replace '/your-link' with the actual link you want to navigate to
     window.scrollTo(0, 0); // Scroll to the top
   };
   const handleClick2 = () => {
-    history.push('/terms-and-condition'); // Replace '/your-link' with the actual link you want to navigate to
+    // Replace '/your-link' with the actual link you want to navigate to
     window.scrollTo(0, 0); // Scroll to the top
   };
   const toggleNav = () => {
