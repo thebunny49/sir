@@ -441,8 +441,8 @@ The next significant element of Web3 is blockchain, the backbone of cryptocurren
 									<div className="r1 col-md-3 mb-md-0 mb-4 border-left">
 										<h2 className="footer-heading">Privacy</h2>
 										<ul className="list-unstyled">
-											<li><a href="#" style={{ textDecoration: 'none' }} className="py-1 d-block">Terms and condition</a></li>
-											<li><a href="#" style={{ textDecoration: 'none' }} className="py-1 d-block">Privacy Policy</a></li>
+											<li><Link style={{ textDecoration: 'none' }} to="/terms-and-condition" className="py-1 d-block">Terms and condition</Link></li>
+											<li><Link to='/privacy-policy' style={{ textDecoration: 'none' }} className="py-1 d-block">Privacy Policy</Link></li>
 
 										</ul>
 									</div>
